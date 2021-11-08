@@ -4,6 +4,7 @@ public class Question2 {
 
 	public static void main(String[] args) {
 		
+		//declare variable
 		int numItem, q1, q2, q3;
 		double price1, price2, price3, sum;
 		double total1, total2, total3;
@@ -11,6 +12,7 @@ public class Question2 {
 		
 		Scanner input = new Scanner (System.in);
 		
+		//user enter input
 		System.out.print("Enter the number of items: ");
 		numItem = input.nextInt();
 		
@@ -18,23 +20,24 @@ public class Question2 {
 		price1 = input.nextDouble();
 		System.out.print("Enter quantity of first item: ");
 		q1 = input.nextInt();
-		total1 = price1*q1;
+		total1 = price1*q1;//calculate total for 1 item
 		System.out.println("");
 		
 		System.out.print("Enter price of second item: RM");
 		price2 = input.nextDouble();
 		System.out.print("Enter quantity of second item: ");
 		q2 = input.nextInt();
-		total2 = price2*q2;
+		total2 = price2*q2;//calculate total for 1 item
 		System.out.println("");
 		
 		System.out.print("Enter price of third item: RM");
 		price3 = input.nextDouble();
 		System.out.print("Enter quantity of third item: ");
 		q3 = input.nextInt();
-		total3 = price3*q3;
+		total3 = price3*q3;//calculate total for 1 item
 		System.out.println("");
 		
+		//calculation for price
 		sum = total1 + total2 +total3;
 		
 		if (sum > 100) 
@@ -47,6 +50,8 @@ public class Question2 {
 		}
 		
 		bill = sum - discount;
+		
+		//print output
 		System.out.printf("Total price         : RM%.2f" ,sum);
 		System.out.println("");
 		System.out.printf("Discount received   : RM%.2f" ,discount);
