@@ -4,11 +4,13 @@ public class Question1 {
 
 	public static void main(String[] args) {
 		
+		//declare variable
 		double interestrate, loanamount;
 		int years;
 		
 		Scanner input = new Scanner(System.in);
 		
+		//user input
 		System.out.print("Enter the  yearly interest rate:");
 		interestrate = input.nextDouble();
 		
@@ -18,11 +20,12 @@ public class Question1 {
 		System.out.print("Enter the loan amount:");
 		loanamount = input.nextDouble();
 		
-		
+		//calculate
 		double sum=(interestrate/100)*loanamount*years; 
 		double monthly=(interestrate/100)*loanamount;
 		double total=monthly*(years*12);
 		
+		//print output
 		System.out.printf("The monthly payment is : $%.2f" , monthly);
 		System.out.println("");
 		System.out.printf("The total payment is : $%.2f" , total);
